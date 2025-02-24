@@ -71,7 +71,7 @@ public class Main {
             System.out.print("Apakah anda ingin menyimpan solusi? (ya/tidak): ");
             String save= ScanInput.nextLine();
             if (save=="ya") {
-                board.saveSolution();
+                board.saveSolution(filename);
             }
             ScanInput.close();
         } catch (IOException read) {

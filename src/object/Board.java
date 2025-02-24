@@ -87,9 +87,9 @@ public class Board {
     }
     
 
-    public void saveSolution() {
+    public void saveSolution(String nama) {
         try {
-            BufferedWriter writer= new BufferedWriter(new FileWriter("solusi.txt"));
+            BufferedWriter writer= new BufferedWriter(new FileWriter(nama + "solusi.txt"));
             for (char[] row : board) {
                 writer.write(String.valueOf(row));
                 writer.newLine();
