@@ -36,11 +36,9 @@ java Main
 
 
 ## 5. Author
-```sh
 # Informasi Pembuat
 Nama="Faqih Muhammad Syuhada"
 Email="faqihmsy@gmail.com"
 GitHub="https://github.com/FaqihMSY"
 echo "Author: $Nama ($Email) - $GitHub"
-```
 
