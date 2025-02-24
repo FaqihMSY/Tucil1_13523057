@@ -1,4 +1,3 @@
-#!/bin/bash
 # README
 
 ## 1. Penjelasan Singkat Program
