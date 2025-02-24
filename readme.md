@@ -36,8 +36,11 @@ java Main
 
 
 ## 5. Author
+```sh
+   #!/bin/bash
 Nama="Faqih Muhammad Syuhada"
 Email="faqihmsy@gmail.com"
 GitHub="https://github.com/FaqihMSY"
 echo "Author: $Nama ($Email) - $GitHub"
+```
 
