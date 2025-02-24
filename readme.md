@@ -1,3 +1,4 @@
+#!/bin/bash
 # README
 
 ## 1. Penjelasan Singkat Program
@@ -36,7 +37,6 @@ java Main
 
 
 ## 5. Author
-# Informasi Pembuat
 Nama="Faqih Muhammad Syuhada"
 Email="faqihmsy@gmail.com"
 GitHub="https://github.com/FaqihMSY"
