@@ -62,17 +62,22 @@ public class Main {
             long startTime= System.currentTimeMillis();
             if (puzzleSolver.solvePuzzle(0,0)&&puzzleSolver.getLength()==P) {
                 board.print();
-            } else {
-                System.out.println("solusi tidak ditemukan.");
-            }
-            long endTime= System.currentTimeMillis();
-            System.out.println("Waktu pencarian: "+ (endTime - startTime)+ " ms");
-            System.out.println("Banyak kasus yang ditinjau: "+ puzzleSolver.getSolutionCount());
-            System.out.print("Apakah anda ingin menyimpan solusi? (ya/tidak): ");
-            String save= ScanInput.nextLine();
-            if (save=="ya") {
+                long endTime= System.currentTimeMillis();
+                System.out.println("Waktu pencarian: "+ (endTime - startTime)+ " ms");
+                System.out.println("Banyak kasus yang ditinjau: "+ puzzleSolver.getSolutionCount());
+                System.out.print("Apakah anda ingin menyimpan solusi? (ya/tidak): ");
+                String save= ScanInput.nextLine();
+                if (save=="ya") {
                 board.saveSolution(filename);
             }
+            } else if (puzzleSolver.getLength()==P){
+                System.out.println("Jumlah piece tidak sesuai masukkan.");
+            }
+            else {
+                System.out.println("solusi tidak ditemukan.");
+            }
+            
+            
             ScanInput.close();
         } catch (IOException read) {
             System.out.println("Kesalahan saat membaca file: "+ read.getMessage());
